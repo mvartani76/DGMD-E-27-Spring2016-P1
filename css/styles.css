@@ -1,0 +1,217 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: #70482D;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+}
+
+nav {
+	background-color: #ED8F00;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+nav ul li {
+	font-family: 'Lato', sans-serif;
+}
+nav ul a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em;
+	float: left;
+}
+nav ul a:hover {
+	color: #a16100;
+}
+main {
+	overflow: auto;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	background-color: #EFECCA;
+}
+main h2 {
+	font-size: 3em;
+	padding-top: 1em;
+}
+main p {
+	font-size: 1.5em;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+div.col-1-2 img {
+	max-width: 225px;
+	width: 100%;
+}
+main img {
+	margin-right: 1.875em;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 2em 0;
+	margin: 3em 0;
+	color: #999;
+	text-align: center;
+}
+
+/* grid system */
+
+.row::after {
+    content:"";
+    display: table;
+    clear:both;
+} 
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+.col-1 {
+	width: 25%;
+}
+.col-2 {
+	width: 50%;
+}
+.col-3 {
+	width: 75%;
+}
+.col-4 {
+	width: 100%;
+}
+
+/* media queries */
+
+/* Mobile Landscape Screen Sizes */
+/* pixel range: 480-767px */
+@media only screen and 
+	(min-width: 480px) and (max-width: 767px)  {
+
+	.col-1-2,
+	.col-2 {
+		width: 44%;
+	}
+	.col-1-4,
+	.col-3,
+	.col-4 {
+		width: 92%;
+	}
+
+}
+@media only screen and (min-width: 702px)  {
+	header {
+		background: url(../images/sog-entrance-1200.jpg) no-repeat;
+		width: 1200px;
+		height: 300px;
+		font-family: 'Lato', sans-serif; 
+		color: #fff;
+	}
+	header h1 {
+		padding: 0.5em;
+		margin: 0;
+	}
+	header h1 a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+/* adjust "discover" box for smaller width */
+@media only screen and (min-width: 702px) and (max-width: 1013px)  {
+	main h2 {
+		font-size: 2.5em;
+		padding-top: 0em;
+	}
+	main p {
+		font-size: 1.5em;
+	}
+}
+/* adjust "discover" box again and change nav layout */
+@media only screen and (max-width: 701px)  {
+	main h2 {
+		font-size: 2em;
+		padding-top: 0em;
+	}
+	main p {
+		font-size: 1.2em;
+		font-family: 'Lato', sans-serif;
+	}
+	main img {
+		float: none;
+		margin: 0;
+	}
+	nav ul a {
+		display: block;
+		float: none;
+		padding-left:3.333333%;
+	}	
+	/* splits nav into 2 columns
+	http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+	nav li:nth-child(even) {
+	  width: 50%;
+	  float: right; 
+	}
+	nav li:nth-child(odd) {
+	  width: 50%;
+	  float: left;
+	}
+
+	header {
+		background: url(../images/sog-entrance-large.jpg) no-repeat;
+		width: 100%;
+		height: 149px;
+	}
+	header h1 {
+		padding: 100px 0 0 10px;
+		margin: 0;
+		font-size: 1.6em;
+	}
+	header h1 a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+
+/* Mobile portrait Screen Sizes */
+/* pixel range: <=479px */
+@media only screen and (max-width: 479px) {
+	[class*='col-'] {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+/* for presentation only */
+
+.outside-w-wrapper {
+	background-color: #EEDFAF;
+}
+
+.weather-wrapper {
+	width: 90%;
+	padding-left: 2%;
+	padding-right: 1%;
+	padding-top: 1%;
+	margin: 0 auto;
+	color: white;
+	background-color: #AD7623;
+}
+
+strong {
+	color: steelblue;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.hide {
+	display: none;
+}
