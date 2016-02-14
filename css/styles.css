@@ -51,9 +51,10 @@ nav ul a {
 	padding: 1em;
 	float: left;
 }
-nav ul a:hover {
+nav ul a:hover, nav ul li.active a {
 	color: #a16100;
 }
+
 main {
 	overflow: auto;
 	padding-left: 0.5em;
@@ -66,7 +67,7 @@ main h2 {
 }
 main p {
 	font-size: 1.5em;
-	font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 div.col-1-2 img {
 	max-width: 225px;
