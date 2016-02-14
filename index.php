@@ -25,11 +25,13 @@
 		<div class="row">
 			<nav class="col-4">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li class="active"><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Things to Do</a></li>
 					<li><a href="#">Photo Gallery</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Register</a></li>
+					<li><a href="./contact.php">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
