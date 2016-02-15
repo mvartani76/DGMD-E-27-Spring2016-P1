@@ -2,6 +2,7 @@
 
 .outside-w-wrapper {
 	background-color: #EEDFAF;
+	text-align: center
 }
 
 .weather-wrapper {
@@ -12,6 +13,7 @@
 	margin: 0 auto;
 	color: white;
 	background-color: #AD7623;
+	text-align: center
 }
 
 strong {
