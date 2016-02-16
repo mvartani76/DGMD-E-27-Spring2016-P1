@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/weather-style.css">
-	<link rel="stylesheet" href="css/formstyle.css">
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script>
@@ -29,85 +28,33 @@
 					<li><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Things to Do</a></li>
-					<li><a href="./photogallery.php">Photo Gallery</a></li>
+					<li class="active"><a href="./photogallery.php">Photo Gallery</a></li>
 					<li><a href="./login.php">Login</a></li>
-					<li><a href="./register.php">Register</a></li>					
-					<li class="active"><a href="./contact.php">Contact Us</a></li>
+					<li><a href="./register.php">Register</a></li>
+					<li><a href="./contact.php">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="row">
-			<main class="col-3">
-		  
-			  <form id="contact_id" method="post">
-			    <h3>Quick Contact</h3>
-			    <h4>We would love to hear from you! Please contact us today, and get reply with in 24 hours!</h4>
-			    <fieldset><input placeholder="First Name" id="firstname" name="firstname" type="text" tabindex="1" required autofocus></fieldset>
-			    <fieldset><input placeholder="Last Name" id="lastname" name="lastname" type="text" tabindex="2" required></fieldset>
-			    <fieldset><input placeholder="Your Email Address" id="emailaddr" name="emailaddr" type="email" tabindex="3"></fieldset>
-			    <fieldset><input placeholder="Your Phone Number" id="phonenumber" name="phonenumber" type="tel" tabindex="4"></fieldset>
-			    <fieldset><input placeholder="Your Web Site starts with http://" id="weburl" name="weburl" type="url" tabindex="5">
-			    </fieldset>
-				<fieldset><h4>What type of message do you want to send?</h4>
-				    <input type="radio" id="dept1" name="dept" value="general" tabindex="6" checked> General
-				    <input type="radio" id="dept2" name="dept" value="sales" tabindex="7"> Sales
-				    <input type="radio" id="dept3" name="dept" value="marketing" tabindex="8"> Marketing
-				    <input type="radio" id="dept4" name="dept" value="technical" tabindex="9"> Technical
-				</fieldset>
-			    <fieldset><textarea placeholder="Type your Message Here...." tabindex="10" required></textarea>
-			    </fieldset>
-			    <h4 class="centerh4">Preferred time for phone contact...</h4>
-			    <div class="form50">
-			    <fieldset><label>Start Time</label><input id="start_time" name="start_time" type="time" tabindex="11" value="00:00"></fieldset>
-			  </div>
-			      <div class="form50">
-			    <fieldset><label>End Time</label><input id="end_time" name="end_time" type="time" tabindex="12" value="23:59"></fieldset>
-			  </div>
-			    <fieldset>
-			      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-			    </fieldset>
-			  </form>
-			</main>
-			<div class="col-1 outside-w-wrapper">
-				<h3>Local Time &amp; Weather</h3>
-				<?php
-				// Return date/time info of a timestamp; then format the output
-				date_default_timezone_set('America/New_York');
-				
-				$mydate=getdate();
-				echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
-				echo "<br>";
-				
-   				
-   				$currenttime = date('h:i A');
-   				echo date('h:i A',strtotime($currenttime));
-   				echo "<br>";
-   				echo "<br>";
-				?>
-				<div class="weather-wrapper hide">
-				<img src="" class="weather-icon" alt="Weather Icon" />
-		
-				<p><strong>Place</strong></br>
-				<span class="weather-place"></span></p>
-		
-				<p><strong>Temperature</strong>
-				<br /><span class="weather-temperature"></span></p>
-				
-				<p><strong>Description</strong>
-				<br /><span class="weather-description capitalize"></span></p>
-				
-				<p><strong>Humidity</strong>
-				<br /><span class="weather-humidity"></span></p>
-				
-				<p><strong>Wind speed</strong>
-				<br /><span class="weather-wind-speed"></span></p>
-				
-				<p><strong>Sunrise</strong>
-				<br /><span class="weather-sunrise"></span></p>
-				
-				<p><strong>Sunset</strong>
-				<br /><span class="weather-sunset"></span></p>
-				</div>
+		<div class="row sameHeights">
+			<div class="col-1-2-4">
+				<h3>Minuteman Bikeway</h3>
+			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
+			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+			</div>
+			<div class="col-1-2-4">
+				<h3>Minuteman Bikeway</h3>
+			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
+			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+			</div>
+			<div class="col-1-2-4">
+				<h3>Minuteman Bikeway</h3>
+			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
+			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+			</div>
+			<div class="col-1-2-4">
+				<h3>Minuteman Bikeway</h3>
+			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
+			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
 			</div>
 		</div>
 		<!--
@@ -143,7 +90,7 @@
 	    </footer>
 	</div>
 
-	<!--<script src="js/eqheight.js"></script>
+	<script src="js/eqheight.js"></script>
 	<script type="text/javascript">
 	if ('addEventListener' in window) {
 	    window.addEventListener('resize', function(){
@@ -153,7 +100,7 @@
 	        sameHeights();
 	    });
 	}
-	</script>-->
+	</script>
 	<script src="/js/openWeather.js"></script>
 	<script>
 		$(function() {
@@ -190,20 +137,3 @@
 	</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -29,7 +29,7 @@
 					<li><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Things to Do</a></li>
-					<li><a href="#">Photo Gallery</a></li>
+					<li><a href="./photogallery.php">Photo Gallery</a></li>
 					<li><a href="./login.php">Login</a></li>
 					<li class="active"><a href="./register.php">Register</a></li>					
 					<li><a href="./contact.php">Contact Us</a></li>

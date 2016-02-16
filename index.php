@@ -28,9 +28,9 @@
 					<li class="active"><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Things to Do</a></li>
-					<li><a href="#">Photo Gallery</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Register</a></li>
+					<li><a href="./photogallery.php">Photo Gallery</a></li>
+					<li><a href="./login.php">Login</a></li>
+					<li><a href="./register.php">Register</a></li>
 					<li><a href="./contact.php">Contact Us</a></li>
 				</ul>
 			</nav>
@@ -39,10 +39,11 @@
 			<main class="col-3">
 				<picture>
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="img/townhall-400.jpg" media="(min-width: 1014px)">
-					<source srcset="img/townhall-300.jpg" media="(min-width: 702px) and (max-width: 1013px) ">
+					<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
+					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+					<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="img/townhall-188.jpg" alt="Welcome to Arlington!">
+					<img srcset="images/sog-entrance-drive-orig-500.jpg" alt="Drive into Our Neighborhood!">
 				</picture>
 
 				<h2>Welcome to the Shores of Glenwood Neighborhood Association Website!</h2>
