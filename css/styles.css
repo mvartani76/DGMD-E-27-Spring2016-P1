@@ -67,9 +67,12 @@ main p {
 	font-size: 1.5em;
 	font-family: 'Lato', sans-serif;
 }
-div.col-1-2 img {
-	max-width: 225px;
-	width: 100%;
+div.col-1-2-4 img {
+	max-width: 350px;
+	width: 95%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 main img {
 	padding-top: 1%;
@@ -134,6 +137,14 @@ footer {
 	main {
 		background-color: red;
 	}
+
+	.col-1-2-4 h3 {
+		font-size: 1.25em;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
 }
 
 /* Tablet Screen Sizes */

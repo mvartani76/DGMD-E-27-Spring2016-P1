@@ -35,54 +35,33 @@
 				</ul>
 			</nav>
 		</div>
+		<div class="row">
+			<h2>Shores of Glenwood Photo Gallery</h2>
+			<p>We are all very proud of the beauty and serenity of our neighborhood. Please click on the albums below to see the beauty of the land, the houses, the wildlife, and most importantly the people of Shores of Glenwood.</p>
+			<p>We would love for you to share your Shores of Glenwood photo memories with us. Please contact us and we will upload your photos to this site.</p> 
+		</div>
 		<div class="row sameHeights">
 			<div class="col-1-2-4">
-				<h3>Minuteman Bikeway</h3>
-			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+				<h3>The Nature Preserve</h3>
+			    <img src="images/sog-preserve-entrance-250.jpg" alt="Our Nature Preserve">
+			    <p>We are so lucky to have a state nature preserve with a forest, lake and a river with lots of natural wildlife.</p>
 			</div>
 			<div class="col-1-2-4">
-				<h3>Minuteman Bikeway</h3>
-			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+				<h3>The Front Pond</h3>
+			    <img src="images/sog-pond-winter-350.jpg" alt="The Front Pond">
+			    <p>The pond near our subdivision entrance way is both beautiful as well as a source for winter enjoyment.</p>
 			</div>
 			<div class="col-1-2-4">
-				<h3>Minuteman Bikeway</h3>
-			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+				<h3>Shores of Glenwood at Night</h3>
+			    <img src="images/sog-entrance-night-250.jpg" alt="Shores of Glenwood at Night">
+			    <p>The beauty of our neighborhood at night during the holidays...</p>
 			</div>
 			<div class="col-1-2-4">
-				<h3>Minuteman Bikeway</h3>
-			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
+				<h3>Our Houses</h3>
+			    <img src="images/sog-houses-300.jpg" alt="Our Houses">
+			    <p>We have many beautiful houses in our neighborhood. Please see pictures of the houses that our residents have shared.</p>
 			</div>
 		</div>
-		<!--
-		<div class="row sameHeights">
-			<div class="col-1-2" data-key="sameHeights">
-				<h3>Minuteman Bikeway</h3>
-			    <img src="img/bikeway-225.jpg" alt="Minuteman Bikeway.">
-			    <p>Winding through Cambridge, Arlington, Lexington, and Bedford, there's lots to enjoy.</p>
-			    <p><a href="http://www.minutemanbikeway.org/" target="_blank">Read more &gt;&gt;</a></p>
-			</div>
-			<div class="col-1-2" data-key="sameHeights">
-		    	<h3>Near Boston</h3>
-		    	<img src="img/boston-225.jpg" alt="Boston from Robbins Farm Park.">
-		    	<p>Arlington is just 6 miles from Boston, and it's served by subway and bus service.</p>
-		    	<p><a href="http://www.mbta.com" target="_blank">Read more &gt;&gt;</a></p>
-		    </div>
-		    <div class="col-1-2" data-key="sameHeights">
-		    	<h3>Art and Beauty</h3>
-		    	<img src="img/statue-225.jpg" alt="Native American statue.">
-		    	<p>"Menotomy Indian Hunter", by Cyrus E. Dallin (1911), is on display in the Winfield Robbins Memorial Garden. </p>
-		    	<p><a href="http://commons.wikimedia.org/wiki/File:Menotomy_Indian_Hunter_by_Cyrus_E._Dallin_-_Arlington,_Massachusetts.JPG" target="_blank">Read more &gt;&gt;</a></p>
-		    </div>
-		    <div class="col-1-2" data-key="sameHeights">
-		    	<h3>Historic Structures</h3>
-		    	<img src="img/watertower-225.jpg" alt="Arlington Water Tower." class="img-responsive">
-		    	<p>The Arlington Water Tower is just one of many unique and historic structures in Arlington.</p>
-		    	<p><a href="http://en.wikipedia.org/wiki/Arlington_Reservoir_(Arlington,_Massachusetts)" target="_blank">Read more &gt;&gt;</a></p>
-		    </div>-->
 	</div>
 	<div class="row">
 	    <footer class="col-4">
