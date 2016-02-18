@@ -10,9 +10,15 @@ html {
 }
 
 body {
+	font-size: 100%;
 	font-family: Arial, Geneva, sans-serif;
 	background-color: #70482D;
 }
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
 h1,
 h2,
 h3,
@@ -59,14 +65,21 @@ main {
 	overflow: auto;
 	background-color: #EFECCA;
 }
-main h2 {
-	font-size: 2.25em;
-	padding-top: 1em;
-}
-main p {
-	font-size: 1.5em;
+main h2, div.photogallery h2 {
+	padding-top: 1%;
+	color: #61381D;
 	font-family: 'Lato', sans-serif;
 }
+main p, div.photogallery p {
+	font-family: 'Lato', sans-serif;
+	color: #BB6F39;
+}
+
+div.photogallery p {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
 div.col-1-2-4 img {
 	max-width: 350px;
 	width: 95%;
@@ -74,6 +87,15 @@ div.col-1-2-4 img {
     margin-left: auto;
     margin-right: auto
 }
+
+div.col-1-2-4 p {
+	width: 95%;
+	padding-left: 5%;
+	padding-right: 2%;
+	font-family: 'Lato', sans-serif;
+	color: #BB6F39;
+}
+
 main img {
 	padding-top: 1%;
 	padding-left: 1%;
@@ -82,8 +104,8 @@ main img {
 }
 footer {
 	clear: both;
-	padding: 2em 0;
-	margin: 3em 0;
+	padding: 0.5em 0;
+	margin: 0.75em 0;
 	color: #999;
 	text-align: center;
 }
@@ -95,6 +117,7 @@ footer {
     display: table;
     clear:both;
 } 
+
 [class*='col-'] {
 	float: left;
 	min-height: 1px;
@@ -128,11 +151,14 @@ footer {
 		color: #fff;
 	}
 
-	main h2 {
+	main h2, div.photogallery h2 {
 		font-size: 2.5em;
-		padding-top: 0em;
 		padding-left: 0.25em;
 		padding-right: 0.25em;
+	}
+	main p, div.photogallery p {
+		font-size: 1.5em;
+		line-height: 1.375;
 	}
 	main {
 		background-color: red;
@@ -143,8 +169,6 @@ footer {
 		margin: 0 auto;
 		text-align: center;
 	}
-
-
 }
 
 /* Tablet Screen Sizes */
@@ -157,14 +181,23 @@ footer {
 		font-family: 'Lato', sans-serif; 
 		color: #fff;
 	}
-	main h2 {
-		font-size: 2em;
-		padding-top: 0em;
+	main h2, div.photogallery h2 {
+		font-size: 2.25em;
 		padding-left: 0.2em;
 		padding-right: 0.2em;
 	}
+	main p, div.photogallery p {
+		font-size: 1.25em;
+		line-height: 1.3;
+	}	
 	main {
 		background-color: blue;
+	}
+
+	.col-1-2-4 h3 {
+		font-size: 1.1em;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 
@@ -181,16 +214,28 @@ footer {
 		font-family: 'Lato', sans-serif; 
 		color: #fff;
 	}
-	main h2 {
-		font-size: 1.5em;
-		padding-top: 0em;
+	main h2, div.photogallery h2 {
+		font-size: 1.75em;
 		padding-left: 0.15em;
 		padding-right: 0.15em;
 	}
+	main p, div.photogallery p {
+		font-size: 1em;
+		line-height: 1.25;
+	}
 	main {
 		background-color: green;
-	}	
+	}
 
+	.col-1-2-4 {
+		width: 50%;
+	}
+
+	.col-1-2-4 h3 {
+		font-size: 1.25em;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 479px)  {
 
@@ -210,72 +255,25 @@ footer {
 		color: #fff;
 		text-decoration: none;
 	}
-	main h2 {
-		font-size: 1em;
-		padding-top: 0em;
+	main h2, div.photogallery h2 {
+		font-size: 1.5em;
 		padding-left: 0.1em;
 		padding-right: 0.1em;
+	}
+	main p, div.photogallery p {
+		font-size: 1em;
+		line-height: 1.25;
 	}
 	main {
 		background-color: pink;
 	}
-}
-/* adjust "discover" box for smaller width
-@media only screen and (min-width: 702px) and (max-width: 1013px)  {
-	main h2 {
-		font-size: 2em;
-		padding-top: 0em;
-	}
-	main p {
-		font-size: 1.5em;
-	}
-}*/
-/* adjust "discover" box again and change nav layout
-@media only screen and (max-width: 701px)  {
-	main h2 {
-		font-size: 0.75em;
-		padding-top: 0em;
-	}
-	main p {
-		font-size: 1.2em;
-		font-family: 'Lato', sans-serif;
-	}
-	main img {
-		float: none;
-		margin: 0;
-	}
-	nav ul a {
-		display: block;
-		float: none;
-		padding-left:3.333333%;
-	}	
-	/* splits nav into 2 columns
-	http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list
-	nav li:nth-child(even) {
-	  width: 50%;
-	  float: right; 
-	}
-	nav li:nth-child(odd) {
-	  width: 50%;
-	  float: left;
-	}
 
-	header {
-		background: url(../images/sog-entrance-large.jpg) no-repeat;
-		width: 100%;
-		height: 149px;
-	}
-	header h1 {
-		padding: 100px 0 0 10px;
-		margin: 0;
-		font-size: 1.6em;
-	}
-	header h1 a {
-		color: #fff;
-		text-decoration: none;
-	}
+	.col-1-2-4 h3 {
+		font-size: 1.25em;
+		margin: 0 auto;
+		text-align: center;
+	}	
 }
-*/
 
 /* Mobile portrait Screen Sizes */
 /* pixel range: <=479px */
@@ -286,9 +284,3 @@ footer {
 		margin-left: 0;
 	}
 }
-
-
-
-
-
-
