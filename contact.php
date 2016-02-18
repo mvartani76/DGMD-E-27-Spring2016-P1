@@ -70,6 +70,7 @@
 			</main>
 			<div class="col-1 outside-w-wrapper">
 				<h3>Local Time &amp; Weather</h3>
+				<p>
 				<?php
 				// Return date/time info of a timestamp; then format the output
 				date_default_timezone_set('America/New_York');
@@ -84,29 +85,30 @@
    				echo "<br>";
    				echo "<br>";
 				?>
+				</p>
 				<div class="weather-wrapper hide">
-				<img src="" class="weather-icon" alt="Weather Icon" />
-		
-				<p><strong>Place</strong></br>
-				<span class="weather-place"></span></p>
-		
-				<p><strong>Temperature</strong>
-				<br /><span class="weather-temperature"></span></p>
-				
-				<p><strong>Description</strong>
-				<br /><span class="weather-description capitalize"></span></p>
-				
-				<p><strong>Humidity</strong>
-				<br /><span class="weather-humidity"></span></p>
-				
-				<p><strong>Wind speed</strong>
-				<br /><span class="weather-wind-speed"></span></p>
-				
-				<p><strong>Sunrise</strong>
-				<br /><span class="weather-sunrise"></span></p>
-				
-				<p><strong>Sunset</strong>
-				<br /><span class="weather-sunset"></span></p>
+					<img src="" class="weather-icon" alt="Weather Icon" />
+			
+					<p><strong>Place</strong></br>
+					<span class="weather-place"></span></p>
+			
+					<p><strong>Temperature</strong>
+					<br /><span class="weather-temperature"></span></p>
+					
+					<p><strong>Description</strong>
+					<br /><span class="weather-description capitalize"></span></p>
+					
+					<p><strong>Humidity</strong>
+					<br /><span class="weather-humidity"></span></p>
+					
+					<p><strong>Wind speed</strong>
+					<br /><span class="weather-wind-speed"></span></p>
+					
+					<p><strong>Sunrise</strong>
+					<br /><span class="weather-sunrise"></span></p>
+					
+					<p><strong>Sunset</strong>
+					<br /><span class="weather-sunset"></span></p>
 				</div>
 			</div>
 		</div>
@@ -153,20 +155,3 @@
 	</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

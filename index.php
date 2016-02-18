@@ -47,11 +47,11 @@
 				</picture>
 
 				<h2>Welcome to the Shores of Glenwood Neighborhood Association Website!</h2>
-				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, and a few ponds. We are an active community of families, young couples, empty-nesters, and other lively people who enjoy a peaceful atmosphere and close proximity to city attractions and water recreation areas.</p>
-				<p><a href="http://www.arlingtonma.gov" target="_blank">Read more &gt;&gt;</a></p>
+				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife. We are an active community of families, young couples, empty-nesters, and other lively people who enjoy a peaceful atmosphere and close proximity to city attractions and water recreation areas.</p>
 			</main>
 			<div class="col-1 outside-w-wrapper">
 				<h3>Local Time &amp; Weather</h3>
+				<p>
 				<?php
 				// Return date/time info of a timestamp; then format the output
 				date_default_timezone_set('America/New_York');
@@ -66,29 +66,30 @@
    				echo "<br>";
    				echo "<br>";
 				?>
+				</p>
 				<div class="weather-wrapper hide">
-				<img src="" class="weather-icon" alt="Weather Icon" />
-		
-				<p><strong>Place</strong></br>
-				<span class="weather-place"></span></p>
-		
-				<p><strong>Temperature</strong>
-				<br /><span class="weather-temperature"></span></p>
-				
-				<p><strong>Description</strong>
-				<br /><span class="weather-description capitalize"></span></p>
-				
-				<p><strong>Humidity</strong>
-				<br /><span class="weather-humidity"></span></p>
-				
-				<p><strong>Wind speed</strong>
-				<br /><span class="weather-wind-speed"></span></p>
-				
-				<p><strong>Sunrise</strong>
-				<br /><span class="weather-sunrise"></span></p>
-				
-				<p><strong>Sunset</strong>
-				<br /><span class="weather-sunset"></span></p>
+					<img src="" class="weather-icon" alt="Weather Icon" />
+			
+					<p><strong>Place</strong></br>
+					<span class="weather-place"></span></p>
+			
+					<p><strong>Temperature</strong>
+					<br /><span class="weather-temperature"></span></p>
+					
+					<p><strong>Description</strong>
+					<br /><span class="weather-description capitalize"></span></p>
+					
+					<p><strong>Humidity</strong>
+					<br /><span class="weather-humidity"></span></p>
+					
+					<p><strong>Wind speed</strong>
+					<br /><span class="weather-wind-speed"></span></p>
+					
+					<p><strong>Sunrise</strong>
+					<br /><span class="weather-sunrise"></span></p>
+					
+					<p><strong>Sunset</strong>
+					<br /><span class="weather-sunset"></span></p>
 				</div>
 			</div>
 		</div>
@@ -135,20 +136,3 @@
 	</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
