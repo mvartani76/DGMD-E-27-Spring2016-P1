@@ -80,39 +80,5 @@
 	    });
 	}
 	</script>
-	<script src="/js/openWeather.js"></script>
-	<script>
-		$(function() {
-		
-			$('.weather-temperature').openWeather({
-				key: '1ae2a03185008da881e3c6cf3c53b1fc',
-				city: 'Commerce Township, MI',
-				units: 'f',
-				descriptionTarget: '.weather-description',
-				windSpeedTarget: '.weather-wind-speed',
-				minTemperatureTarget: '.weather-min-temperature',
-				maxTemperatureTarget: '.weather-max-temperature',
-				humidityTarget: '.weather-humidity',
-				sunriseTarget: '.weather-sunrise',
-				sunsetTarget: '.weather-sunset',
-				placeTarget: '.weather-place',
-				iconTarget: '.weather-icon',
-				customIcons: '/images/icons/weather/',
-				success: function() {
-				
-					//show weather
-					$('.weather-wrapper').show();
-					
-				},
-				error: function(message) {
-				
-					console.log(message);
-				
-				}
-			});
-			
-		});
-	
-	</script>
 </body>
 </html>
