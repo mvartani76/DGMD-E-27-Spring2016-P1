@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/formstyle.css">
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>	
 	<script>
 	    // Picture element HTML5 shiv
 	    document.createElement( "picture" );
@@ -24,8 +25,8 @@
 			</header>
 		</div>
 		<div class="row">
-			<nav class="col-4">
-				<ul>
+			<div class="col-4 menu">
+				<ul class="active-toggle">
 					<li><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Things to Do</a></li>
@@ -34,7 +35,8 @@
 					<li class="active"><a href="./register.php">Register</a></li>					
 					<li><a href="./contact.php">Contact Us</a></li>
 				</ul>
-			</nav>
+				<a class="toggle-nav" href="#">&#9776;</a>				
+			</div>
 		</div>
 		<div class="row">
 			<main class="col-3">
