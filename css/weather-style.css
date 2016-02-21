@@ -16,6 +16,11 @@
 	text-align: center
 }
 
+.outside-w-wrapper h3 {
+	font-family: 'Francois One', sans-serif;
+}
+
+
 strong {
 	color: #ED8F00;
 }

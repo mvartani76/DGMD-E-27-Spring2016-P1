@@ -54,7 +54,6 @@ a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
-	padding: 1em;
 	float: left;
 }
 .menu ul a:hover, .menu ul li.active a {
@@ -74,10 +73,14 @@ main {
 	background-color: #EFECCA;
 }
 main h2, div.photogallery h2 {
-	padding-top: 1%;
+	padding-top: 0em;
 	color: #61381D;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Francois One', sans-serif;
 }
+main h3, main h4 {
+	font-family: 'Francois One', sans-serif;
+}
+
 main p, div.photogallery p {
 	font-family: 'Lato', sans-serif;
 	color: #BB6F39;
@@ -159,6 +162,11 @@ footer {
 		color: #fff;
 	}
 
+	.menu ul a {
+		font-size:1.25em;
+		padding: 1em;
+	}
+
 	main h2, div.photogallery h2 {
 		font-size: 2.5em;
 		padding-left: 0.25em;
@@ -189,6 +197,12 @@ footer {
 		font-family: 'Lato', sans-serif; 
 		color: #fff;
 	}
+	
+	.menu ul a {
+		font-size:1em;
+		padding: 0.8em;
+	}
+
 	main h2, div.photogallery h2 {
 		font-size: 2.25em;
 		padding-left: 0.2em;
@@ -221,6 +235,11 @@ footer {
 		height: 300px;
 		font-family: 'Lato', sans-serif; 
 		color: #fff;
+	}
+
+	.menu ul a {
+		font-size:0.75em;
+		padding: 0.5em;
 	}
 
 	main h2, div.photogallery h2 {
