@@ -21,13 +21,14 @@
 }
 
 #contact_id, #login_id, #register_id {
-	background:#F9F9F9;
+	background-color: #F6F5E3;
 	padding:1%;
 	margin:2% 0;
 }
 
 #contact_id h3, #login_id h3, #register_id h3 {
 	color: #70482D;
+	background-color: #F6F5E3;
 	display: block;
 	font-size: 2em;
 	font-weight: 400;
@@ -35,6 +36,7 @@
 
 #contact_id h4, #login_id h4, #register_id h4 {
 	color: #70482D;
+	background-color: #F6F5E3;
 	margin:5px 0 15px;
 	display:block;
 	font-size:1em;
@@ -60,7 +62,7 @@ fieldset {
 #contact_id input[type="text"], #contact_id input[type="email"], #contact_id input[type="tel"], #contact_id input[type="url"],
 #contact_id input[type="time"], #contact_id textarea {
 	width:100%;
-	border:0px solid #CCC;
+	border:1px solid #CCC;
 	background:#FFF;
 	margin:0 0 5px;
 	padding:10px;

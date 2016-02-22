@@ -40,7 +40,9 @@
 		</div>
 		<div class="row">
 			<main class="col-3">
-				<picture>
+				<h2>Welcome to the Shores of Glenwood Neighborhood Association Website!</h2>
+				
+				<picture class="first_main_pic">
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
 					<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
 					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
@@ -49,8 +51,18 @@
 					<img srcset="images/sog-entrance-drive-orig-500.jpg" alt="Drive into Our Neighborhood!">
 				</picture>
 
-				<h2>Welcome to the Shores of Glenwood Neighborhood Association Website!</h2>
-				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife. We are an active community of families, young couples, empty-nesters, and other lively people who enjoy a peaceful atmosphere and close proximity to city attractions and water recreation areas.</p>
+				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife.</p>
+				<picture class="second_main_pic">
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
+					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+					<!--[if IE 9]></video><![endif]-->
+					<img srcset="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
+				</picture>
+
+				<p>We are an active community of families, young couples, empty-nesters, and other lively people who enjoy a peaceful atmosphere and close proximity to city attractions and water recreation areas.</p>
+
 			</main>
 			<div class="col-1 outside-w-wrapper">
 				<h3>Local Time &amp; Weather</h3>
