@@ -74,21 +74,28 @@
 			<div class="col-1 outside-w-wrapper">
 				<h3>Local Time &amp; Weather</h3>
 				<p>
-				<?php
-				// Return date/time info of a timestamp; then format the output
-				date_default_timezone_set('America/New_York');
-				
-				$mydate=getdate();
-				echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
-				echo "<br>";
-				
-   				
-   				$currenttime = date('h:i A');
-   				echo date('h:i A',strtotime($currenttime));
-   				echo "<br>";
-   				echo "<br>";
-				?>
+					<?php
+					// Return date/time info of a timestamp; then format the output
+					date_default_timezone_set('America/New_York');
+					
+					$mydate=getdate();
+					echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+					echo "<br>";
+					
+	   				
+	   				$currenttime = date('h:i A');
+	   				echo date('h:i A',strtotime($currenttime));
+	   				echo "<br>";
+	   				echo "<br>";
+					?>
 				</p>
+				<!-- This is the placeholder html code to insert the openweather code using javascript
+				I thought this would be a nice touch to add to a neighborhood community website...
+				This code was inspired from the following links:
+				https://github.com/michael-lynch/open-weather
+				http://openweathermap.org/
+
+				Unfortunately, my city does not show up on the database so it chose the closest city to it... -->				
 				<div class="weather-wrapper hide">
 					<img src="" class="weather-icon" alt="Weather Icon" />
 			
@@ -122,6 +129,7 @@
 	    </footer>
 	</div>
 
+	<!-- Specific code for configuring the openweather data to the subdivision location -->
 	<script src="/js/openWeather.js"></script>
 	<script>
 		$(function() {

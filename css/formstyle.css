@@ -1,3 +1,6 @@
+/* This is the stylesheet for the three form pages that are in this
+   this website, namely login.php, register.php, and contact.php. */
+
 #contact_id input[type="text"],
 #contact_id input[type="email"],
 #contact_id input[type="tel"],
@@ -45,8 +48,6 @@
 #contact_id .centerh4, #contact_id input[type="time"] {
 	text-align: center;
 }
-
-
 
 fieldset {
 	border: medium none !important;

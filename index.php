@@ -42,6 +42,8 @@
 			<main class="col-3">
 				<h2>Welcome to the Shores of Glenwood Neighborhood Association Website!</h2>
 				
+				<!-- Using picturefill, load different pictures depending on the width of the screen
+				This picture is in the upper left hand corner of the main section under the <h2> title... -->
 				<picture class="first_main_pic">
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
 					<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
@@ -52,6 +54,9 @@
 				</picture>
 
 				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife.</p>
+				
+				<!-- Using picturefill, load different pictures depending on the width of the screen
+				This picture is in the lower right hand corner of the main section -->
 				<picture class="second_main_pic">
 					<!--[if IE 9]><video style="display: none;"><![endif]-->
 					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
@@ -67,21 +72,27 @@
 			<div class="col-1 outside-w-wrapper">
 				<h3>Local Time &amp; Weather</h3>
 				<p>
-				<?php
-				// Return date/time info of a timestamp; then format the output
-				date_default_timezone_set('America/New_York');
-				
-				$mydate=getdate();
-				echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
-				echo "<br>";
-				
-   				
-   				$currenttime = date('h:i A');
-   				echo date('h:i A',strtotime($currenttime));
-   				echo "<br>";
-   				echo "<br>";
-				?>
+					<?php
+					// Return date/time info of a timestamp; then format the output
+					date_default_timezone_set('America/New_York');
+					
+					$mydate=getdate();
+					echo "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+					echo "<br>";
+					
+	   				$currenttime = date('h:i A');
+	   				echo date('h:i A',strtotime($currenttime));
+	   				echo "<br>";
+	   				echo "<br>";
+					?>
 				</p>
+				<!-- This is the placeholder html code to insert the openweather code using javascript
+				I thought this would be a nice touch to add to a neighborhood community website...
+				This code was inspired from the following links:
+				https://github.com/michael-lynch/open-weather
+				http://openweathermap.org/
+
+				Unfortunately, my city does not show up on the database so it chose the closest city to it... -->
 				<div class="weather-wrapper hide">
 					<img src="" class="weather-icon" alt="Weather Icon" />
 			
@@ -115,6 +126,7 @@
 	    </footer>
 	</div>
 
+	<!-- Specific code for configuring the openweather data to the subdivision location -->
 	<script src="/js/openWeather.js"></script>
 	<script>
 		$(function() {
