@@ -50,7 +50,7 @@
 					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
 					<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/sog-entrance-drive-orig-500.jpg" alt="Drive into Our Neighborhood!">
+					<img srcset="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
 				</picture>
 
 				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife.</p>
