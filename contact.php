@@ -49,12 +49,11 @@
 			    <fieldset><input placeholder="Last Name" id="lastname" name="lastname" type="text" tabindex="2" required></fieldset>
 			    <fieldset><input placeholder="Your Email Address" id="emailaddr" name="emailaddr" type="email" tabindex="3"></fieldset>
 			    <fieldset><input placeholder="Your Phone Number" id="phonenumber" name="phonenumber" type="tel" tabindex="4"></fieldset>
-			    <fieldset><input placeholder="Your Web Site starts with http://" id="weburl" name="weburl" type="url" tabindex="5">
 			    </fieldset>
 				<fieldset><h4>What type of message do you want to send?</h4>
 				    <input type="radio" id="dept1" name="dept" value="general" tabindex="6" checked> General
-				    <input type="radio" id="dept2" name="dept" value="sales" tabindex="7"> Sales
-				    <input type="radio" id="dept3" name="dept" value="marketing" tabindex="8"> Marketing
+				    <input type="radio" id="dept2" name="dept" value="dues" tabindex="7"> Dues
+				    <input type="radio" id="dept3" name="dept" value="complaint" tabindex="8"> Complaint
 				    <input type="radio" id="dept4" name="dept" value="technical" tabindex="9"> Technical
 				</fieldset>
 			    <fieldset><textarea placeholder="Type your Message Here...." tabindex="10" required></textarea>
