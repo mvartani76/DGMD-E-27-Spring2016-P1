@@ -67,3 +67,66 @@ This code uses two google typefaces, Lato (for the general paragraph text) and F
 <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 ```	
+## Responsive Images
+
+### Swapping the background header image using media queries
+
+The header background image changes based on screen width. There are four (4) different background images for the header depending on the screen width. The header image is in all the pages for the site... The source html and css code is shown below...
+
+HTML
+'''
+		<div class="row">
+			<header class="col-4">
+			</header>
+		</div>
+'''
+
+CSS (styles.css)
+'''
+@media only screen and (min-width: 1050px) {
+	header {
+		background: url(../images/sog-entrance-1200.jpg) no-repeat;
+		width: 1200px;
+		height: 300px;
+		font-family: 'Lato', sans-serif; 
+		color: #fff;
+	}
+	...
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1049px) {
+	header {
+		background: url(../images/sog-entrance-1000.jpg) no-repeat;
+		width: 1000px;
+		height: 300px;
+		font-family: 'Lato', sans-serif; 
+		color: #fff;
+	}
+	...
+}
+
+@media only screen and 
+	(min-width: 480px) and (max-width: 767px)  {
+
+	header {
+		background: url(../images/sog-entrance-800.jpg) no-repeat;
+		width: 800px;
+		height: 300px;
+		font-family: 'Lato', sans-serif; 
+		color: #fff;
+	}
+	...
+}
+
+@media only screen and (max-width: 479px)  {
+
+	header {
+		background: url(../images/sog-entrance-500.jpg) no-repeat;
+		width: 500px;
+		height: 255px;
+		font-family: 'Lato', sans-serif; 
+		color: #fff;
+	}
+	...
+}
+'''
