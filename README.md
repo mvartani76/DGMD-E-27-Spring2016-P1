@@ -74,15 +74,15 @@ This code uses two google typefaces, Lato (for the general paragraph text) and F
 The header background image changes based on screen width. There are four (4) different background images for the header depending on the screen width. The header image is in all the pages for the site... The source html and css code is shown below...
 
 HTML
-'''
+```
 		<div class="row">
 			<header class="col-4">
 			</header>
 		</div>
-'''
+```
 
 CSS (styles.css)
-'''
+```
 @media only screen and (min-width: 1050px) {
 	header {
 		background: url(../images/sog-entrance-1200.jpg) no-repeat;
@@ -129,4 +129,4 @@ CSS (styles.css)
 	}
 	...
 }
-'''
+```
