@@ -50,7 +50,7 @@
 					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
 					<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
+					<img src="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
 				</picture>
 
 				<p>This site contains information about our great community located in Commerce Township, Michigan. Shores of Glenwood is a highly esteemed neighborhood of homes set in a carefully preserved environment with majestic oak trees and evergreens, beautiful rolling hills, a few ponds, a gently flowing stream, and lots of natural wildlife.</p>
@@ -63,7 +63,7 @@
 					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
 					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
 					<!--[if IE 9]></video><![endif]-->
-					<img srcset="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
+					<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
 				</picture>
 
 				<p>We are an active community of families, young couples, empty-nesters, and other lively people who enjoy a peaceful atmosphere and close proximity to city attractions and water recreation areas.</p>
@@ -94,28 +94,28 @@
 
 				Unfortunately, my city does not show up on the database so it chose the closest city to it... -->
 				<div class="weather-wrapper hide">
-					<img src="" class="weather-icon" alt="Weather Icon" />
+					<img src="#" class="weather-icon" alt="Weather Icon" />
 			
-					<p><strong>Place</strong></br>
+					<p><strong>Place</strong><br>
 					<span class="weather-place"></span></p>
 			
 					<p><strong>Temperature</strong>
-					<br /><span class="weather-temperature"></span></p>
+					<br><span class="weather-temperature"></span></p>
 					
 					<p><strong>Description</strong>
-					<br /><span class="weather-description capitalize"></span></p>
+					<br><span class="weather-description capitalize"></span></p>
 					
 					<p><strong>Humidity</strong>
-					<br /><span class="weather-humidity"></span></p>
+					<br><span class="weather-humidity"></span></p>
 					
 					<p><strong>Wind speed</strong>
-					<br /><span class="weather-wind-speed"></span></p>
+					<br><span class="weather-wind-speed"></span></p>
 					
 					<p><strong>Sunrise</strong>
-					<br /><span class="weather-sunrise"></span></p>
+					<br><span class="weather-sunrise"></span></p>
 					
 					<p><strong>Sunset</strong>
-					<br /><span class="weather-sunset"></span></p>
+					<br><span class="weather-sunset"></span></p>
 				</div>
 			</div>
 		</div>

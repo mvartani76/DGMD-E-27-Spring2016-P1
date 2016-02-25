@@ -93,28 +93,28 @@
 
 				Unfortunately, my city does not show up on the database so it chose the closest city to it... -->				
 				<div class="weather-wrapper hide">
-					<img src="" class="weather-icon" alt="Weather Icon" />
+					<img src="#" class="weather-icon" alt="Weather Icon" />
 			
-					<p><strong>Place</strong></br>
+					<p><strong>Place</strong><br>
 					<span class="weather-place"></span></p>
 			
 					<p><strong>Temperature</strong>
-					<br /><span class="weather-temperature"></span></p>
+					<br><span class="weather-temperature"></span></p>
 					
 					<p><strong>Description</strong>
-					<br /><span class="weather-description capitalize"></span></p>
+					<br><span class="weather-description capitalize"></span></p>
 					
 					<p><strong>Humidity</strong>
-					<br /><span class="weather-humidity"></span></p>
+					<br><span class="weather-humidity"></span></p>
 					
 					<p><strong>Wind speed</strong>
-					<br /><span class="weather-wind-speed"></span></p>
+					<br><span class="weather-wind-speed"></span></p>
 					
 					<p><strong>Sunrise</strong>
-					<br /><span class="weather-sunrise"></span></p>
+					<br><span class="weather-sunrise"></span></p>
 					
 					<p><strong>Sunset</strong>
-					<br /><span class="weather-sunset"></span></p>
+					<br><span class="weather-sunset"></span></p>
 				</div>
 			</div>
 		</div>
