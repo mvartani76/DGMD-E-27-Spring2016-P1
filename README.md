@@ -63,11 +63,13 @@ The grid system uses four (4) columns and the CSS layout (styles.css) is shown b
 .col-1-2-4 goes to 50% width in mobile phone landscape screen sizes and 100% in mobile phone portrait (as do all the columns).
 
 ##Used Typefaces
-This code uses two google typefaces, Lato (for the general paragraph text) and Francois One (for the heading text)...<br>
+This code uses two google typefaces, Lato (for the general paragraph text) and Francois One (for the heading text)...They are linked in to each source file using the source below.<br>
 ```
 <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 ```	
+Although they look similar, these two typefaces are contrasting due to how they are used and the weighting applied to each. The Lato paragraph text is not weighted heavily while the Francois One heading text is heavier... They are not mixed together so it does not give the appearance of a mistaken typeface.
+
 ## Responsive Images
 
 Responsive images are handled two ways...
