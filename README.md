@@ -69,11 +69,15 @@ This code uses two google typefaces, Lato (for the general paragraph text) and F
 ```	
 ## Responsive Images
 
+Responsive images are handled two ways...
+1.) Swapping background images based using media queries
+2.) Using Picturefill.js
+
 ### Swapping the background header image using media queries
 
 The header background image changes based on screen width. There are four (4) different background images for the header depending on the screen width. The header image is in all the pages for the site... The source html and css code is shown below...
 
-HTML
+####HTML
 ```
 		<div class="row">
 			<header class="col-4">
@@ -81,7 +85,7 @@ HTML
 		</div>
 ```
 
-CSS (styles.css)
+####CSS (styles.css)
 ```
 @media only screen and (min-width: 1050px) {
 	header {
@@ -129,4 +133,44 @@ CSS (styles.css)
 	}
 	...
 }
+```
+### Swapping images using Picturefill.js
+Images in the main section of index.php are swapped based on screen width using picturefill. The source HTML code is shown below.
+
+```
+				<!-- Using picturefill, load different pictures depending on the width of the screen
+				This picture is in the upper left hand corner of the main section under the <h2> title... -->
+				<picture class="first_main_pic">
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
+					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+					<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+					<!--[if IE 9]></video><![endif]-->
+					<img src="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
+				</picture>
+```
+
+and
+
+```
+				<!-- Using picturefill, load different pictures depending on the width of the screen
+				This picture is in the lower right hand corner of the main section -->
+				<picture class="second_main_pic">
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
+					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+					<!--[if IE 9]></video><![endif]-->
+					<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
+				</picture>
+				<!-- Using picturefill, load different pictures depending on the width of the screen
+				This picture is in the lower right hand corner of the main section -->
+				<picture class="second_main_pic">
+					<!--[if IE 9]><video style="display: none;"><![endif]-->
+					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
+					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+					<!--[if IE 9]></video><![endif]-->
+					<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
+				</picture>
 ```
