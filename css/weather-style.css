@@ -20,6 +20,17 @@
 
 .outside-w-wrapper h3 {
 	font-family: 'Francois One', sans-serif;
+	color: #61381D;
+}
+
+.outside-w-wrapper p {
+	font-family: 'Lato', sans-serif;
+	color: #BB6F39;
+}
+
+.weather-wrapper p {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
 }
 
 

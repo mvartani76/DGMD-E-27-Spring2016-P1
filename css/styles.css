@@ -173,6 +173,7 @@ footer {
 
 	main h2, div.photogallery h2 {
 		font-size: 2.5em;
+		line-height: 1.25em;		
 		padding-left: 0.25em;
 		padding-right: 0.25em;
 	}
@@ -216,12 +217,13 @@ footer {
 
 	main h2, div.photogallery h2 {
 		font-size: 2.25em;
+		line-height: 1.2em;
 		padding-left: 0.2em;
 		padding-right: 0.2em;
 	}
 	main p, div.photogallery p {
 		font-size: 1.25em;
-		line-height: 1.15;
+		line-height: 1.15em;
 		margin-left: 0.2em;
 		margin-right: 0.2em;
 	}	
@@ -259,12 +261,13 @@ footer {
 
 	main h2, div.photogallery h2 {
 		font-size: 1.75em;
+		line-height: 1.15em;		
 		padding-left: 0.15em;
 		padding-right: 0.15em;
 	}
 	main p, div.photogallery p {
 		font-size: 1.1em;
-		line-height: 1.1;
+		line-height: 1.1em;
 		margin-left: 0.15em;
 		margin-right: 0.15em;	
 	}
@@ -365,12 +368,13 @@ footer {
 
 	main h2, div.photogallery h2 {
 		font-size: 1.5em;
+		line-height: 1.2em;		
 		padding-left: 0.1em;
 		padding-right: 0.1em;
 	}
 	main p, div.photogallery p {
 		font-size: 1em;
-		line-height: 1.15;
+		line-height: 1.15em;
 		text-align: center;
 	}
 	main img {
