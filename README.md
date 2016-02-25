@@ -138,39 +138,29 @@ The header background image changes based on screen width. There are four (4) di
 Images in the main section of index.php are swapped based on screen width using picturefill. The source HTML code is shown below.
 
 ```
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the upper left hand corner of the main section under the <h2> title... -->
-				<picture class="first_main_pic">
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
-					<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
-				</picture>
+		<!-- Using picturefill, load different pictures depending on the width of the screen
+		This picture is in the upper left hand corner of the main section under the <h2> title... -->
+		<picture class="first_main_pic">
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="images/sog-entrance-drive-orig-350.jpg" media="(min-width: 1050px)">
+			<source srcset="images/sog-entrance-drive-orig-250.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+			<source srcset="images/sog-entrance-drive-orig-200.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+			<!--[if IE 9]></video><![endif]-->
+			<img src="images/sog-entrance-drive-orig-350.jpg" alt="Drive into Our Neighborhood!">
+		</picture>
 ```
 
 and
 
 ```
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture class="second_main_pic">
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
-				</picture>
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture class="second_main_pic">
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
-				</picture>
+		<!-- Using picturefill, load different pictures depending on the width of the screen
+		This picture is in the lower right hand corner of the main section -->
+		<picture class="second_main_pic">
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="images/sog-entrance-sign-250.jpg" media="(min-width: 1050px)">
+			<source srcset="images/sog-entrance-sign-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+			<source srcset="images/sog-entrance-sign-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+			<!--[if IE 9]></video><![endif]-->
+			<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
+		</picture>
 ```
