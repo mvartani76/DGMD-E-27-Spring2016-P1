@@ -2,6 +2,8 @@
 
 This is the first assignment for DGMD E-27.
 
+#Source Code
+
 The code consists of the following files:
 
 ##Source HTML/php:
@@ -21,6 +23,43 @@ The code consists of the following files:
 **eqheight.js** - Javascript code from Ben Howdle that makes columns the same heights.<br>
 **menu.js** - jQuery code snippet that toggles classes to make a mobile responsive menu. It uses a "hamburger button" in the mobile portrait mode.<br>
 **openWeather.js** - jQuery code snippet from Michael Lynch (http://michaelynch.com) distributed under MIT license to access the OpenWeather API.<br>
+
+# Assignment Specific Topics
+
+## Grid System
+The grid system uses four (4) columns and the CSS layout (styles.css) is shown below...
+
+```
+/* grid system */
+
+.row::after {
+    content:"";
+    display: table;
+    clear:both;
+} 
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+.col-1 {
+	width: 25%;
+}
+.col-1-2-4 {
+	width: 25%;
+}
+.col-2 {
+	width: 50%;
+}
+.col-3 {
+	width: 75%;
+}
+.col-4 {
+	width: 100%;
+}
+```
+
+.col-1-2-4 goes to 50% width in mobile phone landscape screen sizes and 100% in mobile phone portrait (as do all the columns).
 
 ##Used Typefaces
 This code uses two google typefaces, Lato (for the general paragraph text) and Francois One (for the heading text)...<br>
