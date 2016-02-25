@@ -21,3 +21,10 @@ The code consists of the following files:
 **eqheight.js** - Javascript code from Ben Howdle that makes columns the same heights.<br>
 **menu.js** - jQuery code snippet that toggles classes to make a mobile responsive menu. It uses a "hamburger button" in the mobile portrait mode.<br>
 **openWeather.js** - jQuery code snippet from Michael Lynch (http://michaelynch.com) distributed under MIT license to access the OpenWeather API.<br>
+
+##Used Typefaces
+This code uses two google typefaces, Lato (for the general paragraph text) and Francois One (for the heading text)...<br>
+```
+<link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+```	
