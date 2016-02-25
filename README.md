@@ -25,7 +25,8 @@ The code consists of the following files:
 **openWeather.js** - jQuery code snippet from Michael Lynch (http://michaelynch.com) distributed under MIT license to access the OpenWeather API.<br>
 
 # Assignment Specific Topics
-
+## Browser/Operating System
+I primarily used a Google Chrome browser (Version 48.0.2564.116 m) running on a Windows 10 (64 bit) machine and Safari running on an Apple iPhone 6s plus (iOS 9.2.1).
 ## Grid System
 The grid system uses four (4) columns and the CSS layout (styles.css) is shown below...
 
