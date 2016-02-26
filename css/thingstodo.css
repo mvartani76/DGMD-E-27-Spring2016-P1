@@ -1,0 +1,94 @@
+/* Stylesheet specific to the swapping of columns in thingstodo.php */
+
+aside {
+	background-color: #EEDFAF;
+}
+
+aside h3 {
+	font-family: 'Francois One', sans-serif;
+	color: #61381D;
+	text-align: center;
+}
+
+aside ul {
+	padding-left: 10%;
+}
+
+aside li {
+	font-family: 'Lato', sans-serif;
+	color: #BB6F39;
+}
+
+aside p {
+	font-family: 'Lato', sans-serif;
+	color: #BB6F39;
+}
+
+/* rearranging the columns */
+[class*="col-"] {
+	position: relative;
+}
+.col-push-1 {
+	left: 25%;
+}
+.col-pull-3 {
+	left: -75%;
+	background-color: #EEDFAF;	
+}
+
+/* media queries */
+
+/* Desktop Screen Sizes */
+/* Pixel Range: >= 1000px; */
+@media only screen and (min-width: 1050px) {
+	aside h3 {
+		font-size: 1.5em;
+	}
+	aside li {
+		font-size: 0.9em;
+		line-height: 1.5em;		
+	}	
+}
+
+/* Tablet Screen Sizes */
+/* Pixel Range: >= 768px; */
+@media only screen and (min-width: 768px) and (max-width: 1049px) {
+	aside h3 {
+		font-size: 1.25em;
+	}
+	aside li {
+		font-size: 0.75em;
+		line-height: 1.4em;			
+	}	
+}
+
+/* Mobile Landscape Screen Sizes */
+/* pixel range: 480-767px */
+@media only screen and 
+	(min-width: 480px) and (max-width: 767px)  {	
+	aside h3 {
+		font-size: 1em;
+	}
+	aside li {
+		font-size: 0.6em;
+		line-height: 1.3em;			
+	}
+}
+
+/* Mobile Portrait Screen Sizes */
+/* pixel range: <480px */	
+@media only screen and (max-width: 479px)  {
+	aside h3 {
+		font-size: 1.5em;
+	}
+	aside li {
+		font-size: 0.9em;
+		line-height: 1.5em;		
+	}
+	/* Keep the columns in the original order in the
+	   mobile portrait mode screen size */	
+  	.col-push-1,
+	.col-pull-3 {
+		left: 0;
+	} 
+}
