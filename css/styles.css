@@ -114,6 +114,10 @@ div.col-1-2-4 p {
 	color: #BB6F39;
 }
 
+.col-1-2-4 h3 {
+	color: #61381D;
+}
+
 main img {
 	float: left;
 }
@@ -392,6 +396,10 @@ footer {
 		font-size: 1.25em;
 		margin: 0 auto;
 		text-align: center;
+	}
+	.col-1-2-4 p {
+		margin-left:2%;
+		margin-right:2%;
 	}	
 }
 
