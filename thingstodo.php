@@ -39,104 +39,113 @@
 				<a class="toggle-nav" href="#">&#9776;</a>
 			</div>
 		</div>
-		<div class="row sameHeights">
+		<div class="row">
+			<!-- Added the col-push-1 class which moves this column right 25% to make this display (col-2)
+			     display in the middle for screen sizes >479px.
+			     For screen sizes <=479px, they will display in normal order as written. -->
 			<main class="col-2 col-push-1" data-key="sameHeights">
 				<h2>Things to Do in Commerce Township</h2>
 				
-				<p>As there are many lakes and rivers nearby, there are many water activities to do here in our community from boating and water skiing to
+				<p style="clear: both;">As there are many lakes and rivers nearby, there are many water activities to do here in our community from boating and water skiing to
 				fishing, kayaking, paddle boarding, and swimming.</p>
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/lowerstraitslake-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/lowerstraitslake-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/lowerstraitslake-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/lowerstraitslake-350.jpg" alt="Lower Straits Lake">
-				</picture>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_left_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/lowerstraitslake-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/lowerstraitslake-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/lowerstraitslake-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/lowerstraitslake-350.jpg" alt="Lower Straits Lake">
+					</picture>
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/loonlake-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/loonlake-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/loonlake-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/loonlake-350.jpg" alt="Loon Lake">
-				</picture>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_right_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/loonlake-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/loonlake-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/loonlake-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/loonlake-350.jpg" alt="Loon Lake">
+					</picture>
+					<p style="clear: both;"></p>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_left_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/kayaking-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/kayaking-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/kayaking-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/kayaking-350.jpg" alt="Kayaking">
+					</picture>
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/kayaking-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/kayaking-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/kayaking-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/kayaking-350.jpg" alt="Kayaking">
-				</picture>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_right_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/paddleboard-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/paddleboard-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/paddleboard-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/paddleboard-350.jpg" alt="Paddle Boarding">
+					</picture>
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/paddleboard-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/paddleboard-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/paddleboard-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/paddleboard-350.jpg" alt="Paddle Boarding">
-				</picture>	
-				<br>
-				<p>There are also many restaurants, farms, golf courses, and parks to explore. </p> 
+					<p style="clear: both;">
+						<br>
+						There are also many restaurants, farms, golf courses, and parks to explore.
+					</p> 
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/BeaconHill-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/BeaconHill-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/BeaconHill-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/BeaconHill-350.jpg" alt="Beacon Hill Golf Course">
-				</picture>	
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_left_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/BeaconHill-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/BeaconHill-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/BeaconHill-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/BeaconHill-350.jpg" alt="Beacon Hill Golf Course">
+					</picture>	
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/long-family-orchard-farm-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/long-family-orchard-farm-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/long-family-orchard-farm-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/long-family-orchard-farm-350.jpg" alt="Beacon Hill Golf Course">
-				</picture>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_right_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/long-family-orchard-farm-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/long-family-orchard-farm-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/long-family-orchard-farm-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/long-family-orchard-farm-350.jpg" alt="Beacon Hill Golf Course">
+					</picture>
+					<p style="clear: both;"></p>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_left_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/its-a-matter-of-taste-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/its-a-matter-of-taste-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/its-a-matter-of-taste-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/its-a-matter-of-taste-350.jpg" alt="Beacon Hill Golf Course">
+					</picture>
 
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/its-a-matter-of-taste-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/its-a-matter-of-taste-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/its-a-matter-of-taste-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/its-a-matter-of-taste-350.jpg" alt="Beacon Hill Golf Course">
-				</picture>
-
-				<!-- Using picturefill, load different pictures depending on the width of the screen
-				This picture is in the lower right hand corner of the main section -->
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="images/corn-long-250.jpg" media="(min-width: 1050px)">
-					<source srcset="images/corn-long-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
-					<source srcset="images/corn-long-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
-					<!--[if IE 9]></video><![endif]-->
-					<img src="images/corn-long-350.jpg" alt="Corn Fields">
-				</picture>
+					<!-- Using picturefill, load different pictures depending on the width of the screen
+					This picture is in the lower right hand corner of the main section -->
+					<picture class="thingstodo_main_right_pic">
+						<!--[if IE 9]><video style="display: none;"><![endif]-->
+						<source srcset="images/corn-long-250.jpg" media="(min-width: 1050px)">
+						<source srcset="images/corn-long-200.jpg" media="(min-width: 768px) and (max-width: 1049px) ">
+						<source srcset="images/corn-long-150.jpg" media="(min-width: 480px) and (max-width: 767px) ">
+						<!--[if IE 9]></video><![endif]-->
+						<img src="images/corn-long-350.jpg" alt="Corn Fields">
+					</picture>
 
 			</main>
+			<!-- Added the col-push-1 class which moves this column right 25% to make this display (col-1)
+			     display in the right for screen sizes >479px
+			     For screen sizes <=479px, they will display in normal order as written. -->
 			<div class="col-1 col-push-1 outside-w-wrapper" data-key="sameHeights">
 				<h3>Local Time &amp; Weather</h3>
 				<p>
@@ -186,6 +195,10 @@
 					<br><span class="weather-sunset"></span></p>
 				</div>
 			</div>
+
+			<!-- Added the col-pull-3 class which moves this column left 75% to make this display (col-1)
+			     display in the left for screen sizes >479px
+			     For screen sizes <=479px, they will display in normal order as written. -->
 			<aside class="col-1 col-pull-3" data-key="sameHeights">
 				<h3>Commerce Township Info</h3>
 				<ul>
