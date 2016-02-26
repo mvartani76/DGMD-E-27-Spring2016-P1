@@ -29,7 +29,7 @@
 				<ul class="active-toggle">
 					<li class="active"><a href="./index.php">Home</a></li>
 					<li><a href="#">About</a></li>
-					<li><a href="#">Things to Do</a></li>
+					<li><a href="./thingstodo.php">Things to Do</a></li>
 					<li><a href="./photogallery.php">Photo Gallery</a></li>
 					<li><a href="./login.php">Login</a></li>
 					<li><a href="./register.php">Register</a></li>
@@ -117,7 +117,7 @@
 					<p><strong>Sunset</strong>
 					<br><span class="weather-sunset"></span></p>
 				</div>
-			</div>
+			</div>			
 		</div>
 	</div>
 	<div class="row">
