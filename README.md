@@ -68,8 +68,89 @@ This code uses two google typefaces, Lato (for the general paragraph text) and F
 <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 ```	
-Although they look similar, these two typefaces are contrasting due to how they are used and the weighting applied to each. The Lato paragraph text is not weighted heavily while the Francois One heading text is heavier... They are not mixed together so it does not give the appearance of a mistaken typeface.
+Although they look similar, these two typefaces are contrasting due to how they are used and the weighting applied to each. The Lato paragraph text is not weighted heavily while the Francois One heading text is heavier... They are not mixed together so it does not give the appearance of a mistaken typeface. Also, there is actually a website (http://fontpair.co/) that suggests which fonts go together nicely and Lato and Francois One was mentioned as a nice combination of typefaces.
 
+## Responsive/Scaling Typography
+Using the recommendations from the link given in class as a starting point (http://typecast.com/blog/a-more-modern-scale-for-web-typography), I scaled both the font-size and the line-height for the various media queries. The two main areas where this comes into play is in the main section of index.php and photogallery.php. The selected source CSS (styles.css) is shown below.
+
+```
+/* media queries */
+
+/* Desktop Screen Sizes */
+/* Pixel Range: >= 1050px; */
+@media only screen and (min-width: 1050px) {
+...
+	main h2, div.photogallery h2 {
+		font-size: 2.5em;
+		line-height: 1.25em;		
+		padding-left: 0.25em;
+		padding-right: 0.25em;
+	}
+	main p, div.photogallery p {
+		font-size: 1.5em;
+		line-height: 1.1;
+		margin-left: 0.25em;
+		margin-right: 0.25em;
+	}
+...
+}
+
+/* Tablet Screen Sizes */
+/* Pixel Range: >= 768px; */
+@media only screen and (min-width: 768px) and (max-width: 1049px) {
+...
+	main h2, div.photogallery h2 {
+		font-size: 2.25em;
+		line-height: 1.2em;
+		padding-left: 0.2em;
+		padding-right: 0.2em;
+	}
+	main p, div.photogallery p {
+		font-size: 1.25em;
+		line-height: 1.15em;
+		margin-left: 0.2em;
+		margin-right: 0.2em;
+	}	
+...
+}
+
+/* Mobile Landscape Screen Sizes */
+/* pixel range: 480-767px */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+...
+	main h2, div.photogallery h2 {
+		font-size: 1.75em;
+		line-height: 1.15em;		
+		padding-left: 0.15em;
+		padding-right: 0.15em;
+	}
+	main p, div.photogallery p {
+		font-size: 1.1em;
+		line-height: 1.1em;
+		margin-left: 0.15em;
+		margin-right: 0.15em;	
+	}
+...
+}
+
+/* Mobile portrait Screen Sizes */
+/* pixel range: <=479px */
+@media only screen and (max-width: 479px)  {
+...
+	main h2, div.photogallery h2 {
+		font-size: 1.5em;
+		line-height: 1.2em;		
+		padding-left: 0.1em;
+		padding-right: 0.1em;
+	}
+	main p, div.photogallery p {
+		font-size: 1em;
+		line-height: 1.15em;
+		text-align: center;
+	}
+...
+}
+```
 ## Responsive Images
 
 Responsive images are handled two ways...
