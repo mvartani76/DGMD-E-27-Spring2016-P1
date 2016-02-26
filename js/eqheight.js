@@ -4,6 +4,8 @@
 	        elements = query.length,
 	        max = 0;
 
+		// Only set the height for the columns if screen wdith
+		// is > 479px
 		if ($(window).width()>479) {	    
 
 		    if (elements) {
