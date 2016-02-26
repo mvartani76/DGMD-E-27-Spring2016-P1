@@ -248,3 +248,31 @@ and
 			<img src="images/sog-entrance-sign.jpg" alt="Drive into Our Neighborhood!">
 		</picture>
 ```
+## Navigation Bar
+The navigation bar is located on every page immediately below the header image. The source HTML code is in all the source files in a row underneath the header as expeted and is shown below.
+```
+	<div class="col-4 menu">
+		<ul class="active-toggle">
+			<li class="active"><a href="./index.php">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Things to Do</a></li>
+			<li><a href="./photogallery.php">Photo Gallery</a></li>
+			<li><a href="./login.php">Login</a></li>
+			<li><a href="./register.php">Register</a></li>
+			<li><a href="./contact.php">Contact Us</a></li>
+		</ul>
+		<a class="toggle-nav" href="#">&#9776;</a>
+	</div>
+```
+The classes "active-toggle" and "toggle-nav" are used by the jquery toggle functionality to switch between the "Hamburger Button" mode and regular menu. The "active" class just highlights the current page on the menu. The jQuery source (menu.js) is shown below.
+```
+jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(event) {
+        jQuery(this).toggleClass('active-toggle');
+        jQuery('.menu ul').toggleClass('active-toggle');
+ 
+        event.preventDefault();
+    });
+});
+```
+The navigation menu is also responsive and scales with the media queries.
