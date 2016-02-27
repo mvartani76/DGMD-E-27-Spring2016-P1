@@ -276,3 +276,44 @@ jQuery(document).ready(function() {
 });
 ```
 The navigation menu is also responsive and scales with the media queries.
+
+## Inside page: column swapping
+Although it wasn't mentioned in the actual assignment page, the week 3 video states that we need to swap a column based on media query. This is done in the `thingstodo.php` source file. Similar to the video example, I added an aside that has various stats about Commerce Township, the city where my neighborhood is located.<br>
+This column is the left most column in non mobile portrait modes but using the following snippets of css code, it is shown after the main section.<br>
+
+The css for mobile portrait sizes... From `thingstodo.css`
+
+```
+/* Mobile Portrait Screen Sizes */
+/* pixel range: <480px */	
+@media only screen and (max-width: 479px)  {
+...
+	/* Keep the columns in the original order in the
+	   mobile portrait mode screen size */	
+  	.col-push-1,
+	.col-pull-3 {
+		left: 0;
+	}
+	.thingstodo_main_left_pic, .thingstodo_main_right_pic {
+		width: 100%;
+	}	 
+}
+```
+The css for all other screen sizes... Also from `thingstodo.css`
+
+```
+/* rearranging the columns */
+[class*="col-"] {
+	position: relative;
+}
+.col-push-1 {
+	left: 25%;
+}
+.col-pull-3 {
+	left: -75%;
+	background-color: #EEDFAF;	
+}
+```
+
+Normally as written the aside, which contains the Commerce Township info is the col so would be the rightmost column. By rearranging the columns as shown above with relative position, we can move this aside column to the left for non mobile portrait screen sizes and keep it last when in mobile portrait mode...
+
